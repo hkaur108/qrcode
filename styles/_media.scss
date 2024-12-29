@@ -1,0 +1,19 @@
+@use './global.scss';
+
+   @media screen and (min-width:600px) {
+    .container{
+        @include global.content;
+        max-width: 280px;   
+        }
+    }
+
+@media screen and (max-width:600px) {
+    .container{
+        @include global.content;   
+        max-width: 287px;
+        }
+    }
+    
+
+    
+
