@@ -1,13 +1,14 @@
 @import './variables';
+@import './font';
 
 @mixin content {
     display: block;
     border-radius: 12px;
-    background-color:#fff;
+    background-color:$white;
     padding:1.10rem;
     width:100%;
     margin:auto;
-    box-shadow: 0px 0px 7px 1px rgb(194, 193, 193);
+    box-shadow: 0px 0px 7px 1px $paraColor;
    }
    .image-container{
     width:100%;
@@ -22,16 +23,16 @@
 
 .text-container{
     width:100%;
-    text-align: auto;
     h1{
+        font-weight: 700;
         font-size: 1.25rem;
         line-height: 1.50rem;
-        color:#080633;
+        color:$headingColor;
         margin:.8em 0;
     }
     p{
-      color:gray; 
-      font-size:1.05rem;
+      color:$paraColor; 
+      font-size:$paraFontSize;
       margin-bottom:.8em;
       line-height: 1.50rem;
     }
