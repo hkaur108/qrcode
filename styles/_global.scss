@@ -4,11 +4,16 @@
 @mixin content {
     display: block;
     border-radius: 12px;
-    background-color:$white;
+    background-color:#fff;
     padding:1.10rem;
     width:100%;
+    max-width: 280px;
     margin:auto;
     box-shadow: 0px 0px 7px 1px $paraColor;
+   }
+
+   .container{
+        @include content;
    }
    .image-container{
     width:100%;
@@ -36,4 +41,8 @@
       margin-bottom:.8em;
       line-height: 1.50rem;
     }
+}
+
+.footer{
+    font-size: 2rem;
 }
